@@ -1,0 +1,96 @@
+body {
+    display: grid;
+    color: #fff;
+    background-color: aqua;
+    margin-top: 200px;
+    margin-left: 200px;
+    
+}
+
+
+.btn01 div a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.btn01 div .btn {
+    position: relative;
+    margin: auto;
+    padding: 200px;
+    transition: all .2s ease;
+}
+
+.btn01 div .btn:before {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(135deg, #ffec61, #f321d7);
+    width: 56px;
+    height: 60px;
+    border-radius: 28px;
+    top: 180px;
+    left: 175px;
+    display: block;
+    transition: all .3s ease;
+}
+
+.btn01 div .btn:after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(135deg, #ffec61, #f321d7);
+    width: 56px;
+    height: 56px;
+    transform: translateY(30px) scale(.9);
+    border-radius: 28px;
+    bottom: 0;
+    top: 180px;
+    left: 175px;
+    filter: blur(35px);
+    transition: all .3s ease;
+}
+
+.btn01 div .btn span {
+    position: relative;
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.btn01 div .btn svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #fff; stroke-width: 2;
+    transform: translate(-5px);
+    transition: all .3s ease;
+}
+
+.btn01 div .btn:hover:before {
+    width: 35%;
+    background-image: linear-gradient (135deg, #ffec61, O#f321d7);
+    transition: all .5s;
+}
+
+.btn01 div .btn:hover:after {
+    width: 35%;
+    background-image: linear-gradient (135deg, #ffec61, O#f321d7);
+    transform: all .5s;
+}
+
+.btn01 div .btn:hover svg {
+    transform: translateX(0);
+}
+
+.btn01 div .btn:active {
+    transform: scale(1);
+}
+
+
+
+
+
